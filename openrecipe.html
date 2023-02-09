@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="style.css"/>
+
+    <title>Open Recipe</title>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="main.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="text-center">
+            <img src="logo.png" class="logo" id="logo1">
+        </div>
+
+        <div>
+            <h1 id="menu">Open Recipé</h1>
+            <span class="slogan">Open source. Open heart.</span>
+        </div>
+        
+        <div>
+            <fieldset>
+                <legend class="legend">Select your diet preference:</legend>
+                <div>
+                    <input type="radio" name="diet" value="carnivore" checked>
+                    <label>Super carnivore</label>
+                </div>
+                <div>
+                    <input type="radio" name="diet" value="vegetarian">
+                    <label>Vegetarian</label>
+                </div>
+                <div>
+                    <input type="radio" name="diet" value="vegan">
+                    <label>Vegan</label>
+                </div>
+                <div>
+                    <input type="radio" name="diet" value="karachiite">
+                    <label>Karachiite</label>
+                </div>
+            
+            </fieldset>
+        </div>
+
+        <div>
+            <h2>I'm in a <span id="badge">hurry!</span></h2>
+            <label class="labels">Choose and blink twice: </label>
+            <select class="selection" id="frequentmenu" class="list-box">
+                <option value="Biryani" selected>Biryani</option>
+                <option value="Nihari">Nihari</option>
+                <option value="Haleem">Haleem</option>
+                <option value="Quorma">Quorma</option>
+                <option value="Sabzi">Mixed Sabzi</option>
+                <option value="Daal">Daal</option>
+            </select>
+        </div>
+
+        <div>
+            <span id="selecteditem" hidden></span>
+        </div>
+
+        <div>
+            <label class="labels">*Mobile No.:</label>
+            <input type="email" id="email" size="20" required>
+        </div>
+
+        <div>
+            <button type="button" id="order">Order</button>
+        </div>
+    </div>
+</body>
+</html>
